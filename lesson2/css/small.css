@@ -1,0 +1,53 @@
+@media only screen and (min-width: 1em) {
+    body {
+        font-size: 16pt; 
+    }
+    
+    header, main, footer {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+    
+    header {
+        background-color: rgb(214, 71, 19);
+        padding: 1.5rem;
+    }
+    
+    img {
+        align-items:center;
+        width: 200px;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 2.4rem;
+        font-family: 'Suez One', serif;
+        color: white;
+    }
+    
+    h2 {
+        font-family: 'Suez One', serif;
+    }
+    
+    p ul li {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    footer {
+        background-color: grey;
+        color: white;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+    }    
+     
+    .footerlink {
+        text-decoration:none;
+       color: white;
+    }
+    
+    .lessonlist a {
+        text-decoration:none;
+        color:black;
+    }
+        
+}
