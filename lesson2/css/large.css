@@ -1,0 +1,33 @@
+@media only screen and (min-width: 1800px) {
+    header, main, footer {
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+    
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;   
+        grid-gap: 2em;
+    }
+
+    body {
+        font-size: 20pt; 
+    }
+    
+    h1 {
+        font-size: 4.4rem;
+        font-family: 'Suez One', serif;
+        color: white;
+    }
+    .google {  
+        grid-column: 1; 
+    }
+
+    .target {
+        grid-column: 2;
+    }
+
+    .blox {
+        grid-column: 3;
+    }
+}
