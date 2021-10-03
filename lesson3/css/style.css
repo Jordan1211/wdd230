@@ -1,0 +1,100 @@
+body {
+    font-size: 16pt; 
+}
+
+header, main, footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #8ECAE6;
+    padding: 1.5rem;
+}
+
+header img {
+    float: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-family: 'Suez One', serif;
+    color: #023047;
+}
+
+h2 {
+    font-family: 'Suez One', serif;
+    color: #fb8500;
+}
+
+p ul li {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer {
+    background-color: #023047;
+    color: #FFB703;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}    
+ 
+.footerlink {
+    text-decoration:none;
+   color: white;
+}
+
+.lessonlist a {
+    text-decoration:none;
+    color:black;
+}
+
+.primary {
+    background-color: #8ECAE6;
+    color: white;
+}
+
+.secondary {
+    background-color: #023047;
+    color: white;
+}
+
+.accent1 {
+    background-color: #FB8500;
+    color: white;
+}
+
+.accent2 {
+    background-color: #FFB703;
+    color: white;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: #13C0D4;
+  } 
+  
+  nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+    margin: 0;
+  }
