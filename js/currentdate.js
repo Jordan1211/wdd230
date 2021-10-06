@@ -3,5 +3,3 @@ document.getElementById('currentdate').textContent = new Date().toLocaleDateStri
 
 
 document.querySelector("#modified").textContent = `Last Updated: ${document.lastModified}`;
-
-// previously had day and month: weekday: 'long', day: 'numeric', month: 'long', 
