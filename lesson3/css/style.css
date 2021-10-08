@@ -17,7 +17,7 @@ header {
 }
 
 header img {
-    float: center;
+    float: left;
 }
 
 h1 {
@@ -109,4 +109,8 @@ footer {
     display: flex;
     justify-content: space-between;
     text-align: center;
+  }
+
+  .logo {
+    border: 3px solid #ccc;
   }
