@@ -1,3 +1,6 @@
+@import url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-1927DRs5.woff2);
+@import url(https://fonts.gstatic.com/s/suezone/v5/taiJGmd_EZ6rqscQgOFMmouQ-A.woff2);
+
 body {
     font-size: 16pt; 
 }
@@ -5,6 +8,7 @@ body {
 header, main, footer {
     max-width: 760px;
     margin: 0 auto;
+    padding: 1.5rem;
 }
 
 header {
@@ -27,7 +31,15 @@ h2 {
     color: #fb8500;
 }
 
-p ul li {
+h3 {
+    font-family: 'Suez One', serif;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul li {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -94,7 +106,7 @@ footer {
   
   nav ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
   }
