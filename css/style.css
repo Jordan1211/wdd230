@@ -26,7 +26,15 @@ h2 {
     font-family: 'Suez One', serif;
 }
 
-p ul li {
+h3 {
+    font-family: 'Suez One', serif;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul li {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
