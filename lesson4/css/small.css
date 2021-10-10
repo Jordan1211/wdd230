@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
  nav ul {
     list-style-type: none;
     display:block;
@@ -9,6 +9,21 @@
  }
  h1 {
     font-size: 2.3rem;
+ }
+
+ nav ul.hide {
+   display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ main ul li {
+   background-color:#8ECAE6;
  }
 
 }
