@@ -1,4 +1,4 @@
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 480px) {
  nav ul {
     list-style-type: none;
     display:block;
@@ -11,9 +11,4 @@
     font-size: 2.3rem;
  }
 
- .about {
-   font-family: 'Suez One', serif;
-   color: #FFB703;
-   font-size: 3rem;
-}
 }
