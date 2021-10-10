@@ -128,8 +128,7 @@ main ul li {
     display: block;
     margin:10px auto;
     border:1px dashed #000;
-
-      background-color:#8ECAE6
+    background-color:#8ECAE6;
   }
 
 main a {
