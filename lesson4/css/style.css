@@ -124,7 +124,6 @@ nav {
   }
 
 main ul li {
-    align-items: center;
     display: block;
     margin:10px auto;
     border:1px dashed #000;
@@ -135,4 +134,12 @@ main a {
     text-decoration: none;
     list-style: none;
     color:white;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
 }
