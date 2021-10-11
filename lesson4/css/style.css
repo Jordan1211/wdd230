@@ -116,7 +116,6 @@ nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    text-align: center;
   }
 
   .logo {
