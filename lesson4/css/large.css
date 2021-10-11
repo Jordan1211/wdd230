@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 64em) {
    header, nav, main, footer {
       max-width: 1500px;
       flex:none;
@@ -8,8 +8,18 @@
      font-size: 2.5rem;
   }
 
-  nav button {
+button {
    display: none;
+}
+
+main ul li {
+   background-color:#8ECAE6; 
+ }
+
+ nav ul.hide {
+   display: flex;
+   justify-content: space-between;
+   font-size: 2rem;
 }
 
 }
