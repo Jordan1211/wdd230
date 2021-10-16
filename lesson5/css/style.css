@@ -8,6 +8,12 @@ header, nav, main, footer {
     padding: 1.5rem;
 }
 
+img {
+    margin: 0 auto;
+    padding: none;
+}
+
+
 header {
     background-color: #8ECAE6;
     padding: 1.5rem;
@@ -97,6 +103,19 @@ footer {
     height: 3em;
   }
 
+  .forecast th{
+      background-color: #023047;
+      color:#FFB703;
+  }
+
+  .forecast td {
+      width:20%;
+      height: 5em;
+      color:#023047;
+      align-content: center;
+      text-align: center;
+  }
+
 nav {
     background-color: #8ECAE6;
     padding: 1.5rem;
@@ -148,4 +167,26 @@ nav button {
     font-family: 'Suez One', serif;
     font-size: 3rem;
     text-decoration: underline;
+}
+
+.herodiv {
+    position: relative;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width: 2400px;
+}
+
+.weatherSummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background:radial-gradient(#023047, #8ECAE6);
+    border: 1px solid black;
+    color: white;
+    font-size: 32px;
+    padding: .5rem;
 }
