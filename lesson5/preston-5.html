@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a student website, Lesson 3 requires 
+    you to create your siteplan for the Weather Site project. This is the index.html home page for the weather site.">
+    <title> Lesson 03 Website Planning Document Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href='images/weatherFavicon.ico'/>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Site logo" /> 
+        <h1>Weathery Conditions</h1>
+            <p>The Weather site catch phrase/moto</p>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../lesson3/index.html">Home</a></li>
+            <li><a class="activeLink" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+                <img class="hero-ph" src="images/heroImage.jpg" alt="Mountains (main page image)">
+                <section class="weatherSummary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: Sunny
+                    <br>High: 76&#176; F
+                    <br>Wind Chill: 70&#176; F
+                    <br>Wind Speed: 5mph
+                    <br>Humidity: 69%</p>
+                </section>
+        </div>
+
+        <table class="forecast">
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <td><img src="images/sunny.png"> <br>76&#176; F</td>
+                <td><img src="images/stormy.png"> <br>50&#176; F</td>
+                <td><img src="images/rainy.png"> <br>55&#176; F</td>
+                <td><img src="images/sunny.png"> <br>68&#176; F</td>
+                <td><img src="images/sunny.png"> <br>76&#176; F</td>
+                <td><img src="images/rainy.png"> <br>62&#176; F</td>
+                <td><img src="images/sunny.png"> <br>76&#176; F</td>
+            </tr>
+        </table>
+
+        <img src="images/articleImage.jpeg" alt="Map of Idaho Article Image">
+        <section class="article">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <img src="images/map.PNG" alt="Soda Springs, Preston, Fish Haven Map">
+        <section class="contactInfo">
+            <h3>Weathery Conditions</h3>
+            <p>&#10154; 30 N 1st E <br> Preston, ID 83263</p>
+            <p>&#9742; (999)999-9999</p>
+            <p>&#9993; weatheryconditions@tws.com</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Weathery Conditions | Attributions | Jordan Gresham
+        <div>Current Date: <span id="currentDate"></span></div>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    small, medium large
+    hero image, floating Weather Summary
+    stacked picture & article
+    no forecast/no map (on small view)
+    contact info?
+
+    The Weather Site
+    30 N 1st E
+    Preston, ID 
+
+    javascript- section Add that shows if it is Friday
+    "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."
+
+    <li><a href="#">Hero w/ weather summary</a></li>
+            <li><a href="#">5 Day Forecast</a></li>
+            <li><a href="#">Article</a></li>
+            <li><a href="#">Contact Information</a></li>
+
+-->

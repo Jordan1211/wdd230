@@ -54,3 +54,10 @@ footer {
     text-decoration:none;
     color:black;
 }
+
+.activeLink {
+    color: #023047;
+    font-family: 'Suez One', serif;
+    font-size: 3rem;
+    text-decoration: underline;
+}
