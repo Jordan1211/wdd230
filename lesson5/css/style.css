@@ -130,6 +130,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 
   }
   
@@ -191,10 +193,14 @@ nav button {
     padding: .5rem;
 }
 
-.fridayMessage {
+#fridayMessage {
     background-color: #FFB703;
     color: #023047;
     text-align: center;
     font-size: 4rem;
     font-weight: bolder;
+ }
+
+body .hide {
+    display: none;
  }
