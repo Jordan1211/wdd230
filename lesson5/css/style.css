@@ -2,7 +2,7 @@ body {
     font-size: 16pt; 
 }
 
-header, nav, main, footer {
+header, main, footer {
     max-width: 760px;
     margin: 0 auto;
     padding: 1.5rem;
@@ -118,27 +118,25 @@ footer {
 
 nav {
     background-color: #8ECAE6;
+    max-width: 760px;
+    margin:0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
   
   nav a {
     color: white;
     text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+
   }
   
   nav a:hover {
     background-color: white;
     color: #13C0D4;
   } 
-  
-  nav ul {
-    list-style: none;
-  }
-
-  nav li {
-    display: flex;
-    justify-content: space-between;
-  }
-  
 
   .logo {
     border: 3px solid #ccc;
@@ -168,7 +166,6 @@ nav button {
 .activeLink {
     color: #023047;
     font-family: 'Suez One', serif;
-    font-size: 3rem;
     text-decoration: underline;
 }
 
