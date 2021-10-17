@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>footwear</title>
+    <h1>Footwear</h1>
+    <script>
+
+        function wear() {
+            let weather = document.getElementById('input').value;
+            let footwear = ""
+
+            if (weather == "hot") {
+                footwear = "Wear Sandals";
+                }
+                else if (weather == "rain") {
+                footwear = "Wear Galoshes (whatever those are)";
+                }
+                else if (weather == "snow") {
+                footwear = "Wear Boots";
+                }
+                else {
+                footwear = "Wear Shoes";
+                }
+
+            document.getElementById('outputDiv').innerHTML = footwear;
+        }
+
+    </script>
+</head>
+<body>
+    Please enter the Weather to see what you should wear today! <br> 
+    <input type="text" id="input">
+    <button type="button" onclick="wear()">Check</button>
+    <div id="outputDiv"></div>
+</body>
+</html>

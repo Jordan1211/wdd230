@@ -1,0 +1,60 @@
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alarm</title>
+
+    <script>
+
+        // Determines wether you can sleep or not
+
+        // input: all inputs are received from the computers clock (this can be changed manually to check)
+
+        // output: total sale + tax
+        // Sleep in. = weekends & holidays (7/4, 1/1, 12/25)
+        // Get up! = all other
+
+        function checkAlarm() {
+
+
+            var now = new Date();
+            var month = now.getMonth();
+            // 0 if Jan, 1 if Feb and so on until 11 if December
+            var dayOfMonth = now.getDate();
+            // 1 as the first day of the month up until 28, 29, 30 or 31
+            var dayOfWeek = now.getDay();
+            // 0 if Sunday, 1 if Monday and so on until 6 if Saturday
+
+
+            let message;
+            if (dayOfWeek == 0 || dayOfWeek == 6 || (month == 0 && dayOfMonth == 1) || (month == 6 && dayOfMonth == 4) || (month == 11 && dayOfMonth == 25)) {
+                message = "Sleep in.";
+            }
+            else {
+                message = "Get up!";
+            }
+
+
+
+            document.getElementById('output').innerHTML = message;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <label>Click the below button to see if you should wake up!</label>
+
+    <button onclick="checkAlarm()">Check Alarm</button>
+
+    <div id="output"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mileage</title>
+    <h1>Mileage</h1>
+    <script>
+        var start
+        var end
+        var gallons
+        var mpg
+
+        function convert() {
+
+            let start = document.getElementById('start').value;
+            let end = document.getElementById('end').value;
+            let gallons = document.getElementById('gallons').value;
+
+            let mpg = (end-start)/gallons;
+
+            document.getElementById('outputDiv').innerHTML = "For this trip your miles per gallon is " + mpg + " mpg";
+        }
+    </script>
+</head>
+
+<body>
+    Starting Mileage <input type="text" id="start"> <br>
+    Ending Mileage <input type="text" id="end"> <br>
+    Gallons Used <input type="text" id="gallons"> <br>
+    <button type="button" onclick="convert()">Convert</button>
+    <div id="outputDiv"></div>
+</body>
+</html>

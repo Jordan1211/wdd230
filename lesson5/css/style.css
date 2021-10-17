@@ -118,7 +118,6 @@ footer {
 
 nav {
     background-color: #8ECAE6;
-    padding: 1.5rem;
 }
   
   nav a {
@@ -133,9 +132,13 @@ nav {
   
   nav ul {
     list-style: none;
+  }
+
+  nav li {
     display: flex;
     justify-content: space-between;
   }
+  
 
   .logo {
     border: 3px solid #ccc;
@@ -190,3 +193,11 @@ nav button {
     font-size: 32px;
     padding: .5rem;
 }
+
+.fridayMessage {
+    background-color: #FFB703;
+    color: #023047;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+ }

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<script>
+    var start = parseFloat(start);
+    var end = parseFloat(end);
+    var divisor = parseFloat(divisor);
+    var output;
+/* Input: any start end and divisor
+ * Processing: take the numbers between start and end that are divisible by the divisor
+ * Output: Output those numbers clearly
+ */
+    function calc(params) {
+        let start = parseFloat(document.getElementById('start').value);
+        let end = parseFloat(document.getElementById('end').value);
+        let divisor = parseFloat(document.getElementById('divisor').value);
+        let output;
+        
+        output=0;
+        for(i = start; i >0; i=i-divisor) {
+            if(i % divisor != 0) {
+                output += i
+            }
+        }   
+    document.getElementById('output').innerHTML = "<h1><strong>" + output + "</strong></h1>"
+
+}
+    
+</script>
+</head>
+
+<body>
+Start: <input type="text" id="start" size="5"><br>
+End: <input type="text" id="end" size="5"><br>
+Divisor: <input type="text" id="divisor" size="5"><br>
+<button type="button" onclick="calc">Click</button>
+<div id="output"></div>
+</body>
+</html>

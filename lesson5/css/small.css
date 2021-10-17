@@ -31,4 +31,8 @@ nav ul {
    background-color:#8ECAE6;
  }
 
+.forecast, .map {
+   display: none;
+}
+
 }

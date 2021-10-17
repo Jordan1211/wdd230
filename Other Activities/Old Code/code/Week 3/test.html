@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Math Quiz</title>
+<script>
+/* Math Quiz
+ * Input: User enters a simple math problem with answer
+ * Processing: Checks to see if the answer is correct
+ * Output: Lets user know if the answer is correct or not
+ */
+
+ function checkMath() {
+     //User inputs the math problem
+     let numberOne = parseFloat(document.getElementById('firstNumber').value);
+     let operation = document.getElementById('symbol').value;
+     let numberTwo = parseFloat(document.getElementById('secondNumber').value);
+     let userAnswer = parseFloat(document.getElementById('answer').value);
+
+     //Switch statements determine what operation is being preformed
+     let correctAnswer;
+
+     switch(operation) {
+
+        case "+":
+            correctAnswer = (numberOne + numberTwo);
+            //if statement will display if the answer was correct or not
+            if (userAnswer == correctAnswer) {
+                document.getElementById('mathResult').innerHTML = "Correct! Good job"
+            } else {
+                document.getElementById('mathResult').innerHTML = "Incorrect. Try again!" 
+            }
+            break;
+        case "-":
+            correctAnswer = (numberOne - numberTwo);
+            //if statement will display if the answer was correct or not
+            if (userAnswer == correctAnswer) {
+                document.getElementById('mathResult').innerHTML = "Correct! Good job"
+            } else {
+                document.getElementById('mathResult').innerHTML = "Incorrect. Try again!" 
+            }
+            break;
+        case "*":
+            correctAnswer = (numberOne * numberTwo);
+            //if statement will display if the answer was correct or not
+            if (userAnswer == correctAnswer) {
+                document.getElementById('mathResult').innerHTML = "Correct! Good job"
+            } else {
+                document.getElementById('mathResult').innerHTML = "Incorrect. Try again!" 
+            }
+            break;
+        case "/":
+            correctAnswer = (numberOne / numberTwo);
+            //if statement will display if the answer was correct or not
+            if (userAnswer == correctAnswer) {
+                document.getElementById('mathResult').innerHTML = "Correct! Good job"
+            } else {
+                document.getElementById('mathResult').innerHTML = "Incorrect. Try again!" 
+            }
+            break;
+        default:
+            document.getElementById('mathResult').innerHTML = "Error!"
+            break;
+     }
+     
+ }
+</script>
+</head>
+
+<body> 
+     <h2>Test Your Math Skills!</h2>                           
+    <input type="text" id="firstNumber"> 
+    <input type="text" id="symbol"> 
+    <input type="text" id="secondNumber"> 
+    <h3>=</h3>
+    <input type="text" id="answer"> 
+    <button type="button" onclick = "checkMath()">Check</button>
+    <p>
+        <div id="mathResult"></div>
+    </p>
+</body>       
+</html>

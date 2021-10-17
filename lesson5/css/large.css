@@ -22,4 +22,8 @@ main ul li {
    font-size: 2rem;
 }
 
+.forecast, .map {
+   display: inline;
+}
+
 }

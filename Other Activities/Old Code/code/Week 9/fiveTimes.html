@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html  lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Five Times</title>
+
+    <script>
+        /* 
+        Input: None
+        Processing: Create string containing 1 to 12
+        Output: The created count string times 5
+        */
+        function count() {
+        var countView='';
+        for (var i = 0; i<= 12; i++) {
+            console.log(i);
+            countView += i*5 + ' = 5 * '+ i + '</br>';
+        }
+
+        document.getElementById('output').innerHTML = countView;
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Five Times</h1>
+    <p>Press button to reveal count: </p>
+    <button tyep="button" onclick="count()">show count</button> <br> <br>
+    <div id="output"></div>
+</body>
+</html>

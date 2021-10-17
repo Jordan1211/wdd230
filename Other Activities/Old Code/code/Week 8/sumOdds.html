@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum Odds</title>
+
+    <script>
+        // input: n = any integer a user would like to input
+        // output: the sum of all odd integers between 1 and n\
+        // processing: the below logic will take the number input and retrieve all odd numbers by incrementing down by 2 once odd is determined
+        //  once all odd numbers are discovered they will be added together in order to populate the output
+
+        function sumOdds() {
+            var input = parseFloat(document.getElementById('input').value);
+            var start = parseFloat(document.getElementById('start').value);
+            var end = parseFloat(document.getElementById('end').value);
+            var divisor = parseFloat(document.getElementById('divisor').value);
+            var output;
+            var details;
+            if(input<1) {
+                return 0;
+            }
+            output=0;
+            for(i=start; i>0; i--) {
+                if(i % 2 != 0) {
+                    output += i;
+                }
+            }
+            }
+            document.getElementById('output').innerHTML = "<h1><strong>" + output + "</strong></h1>"
+            document.getElementById('details').innerHTML = "Odd Numbers Added: <br>" + details
+        }
+    </script>
+</head>
+<body>
+<h1>Sum of Odd Numbers</h1> <br>
+Input any number: <input type="text" id="input" size="3"><br> Start: <input type="text" id ="start" size = "3"><br> End: <input type ="text" id="end" size ="3"><br> Divisor: <input type="text" id ="divisor" size = "3"> <br>
+Click below to find the Sum of Odd Numbers between 1 and the number you entered<br><br> 
+<button type="button" onclick="sumOdds()">Calculate</button>  
+<br> <div id="output"></div> <br>
+<div id="details"></div> <br>
+</body>
+</html>

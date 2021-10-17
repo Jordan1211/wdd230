@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Get up!</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <button type="button" onclick="dayFinder()">Sleep in or Get up?</button><br>
+    <div id="solution"></div>
+    <script>
+      
+
+
+        function dayFinder()
+        {
+            var now = new Date();
+            var month = now.getMonth();
+            var dayOfMonth = now.getDate();
+            var dayOfWeek = now.getDay();
+            
+            var message;
+
+            if ( dayOfWeek != 0 || dayOfWeek != 6)
+            {
+                if( month == 0 && now == 1){
+                    message = "Sleep In!"; }
+                else if ( month == 6 && now == 4)
+                {
+                    message = "Sleep In!"; }
+                else if ( month == 11 && now == 25)
+                {
+                    message == "Sleep In!"; }
+                else 
+                {
+                    message = "Get Up!"; }
+            }
+            document.getElementById("solution").innerHTML = message;
+        }
+    </script>
+</body>
+</html>

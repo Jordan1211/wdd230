@@ -23,8 +23,11 @@
     }
 
     main ul li {
-      background-color:grey;
-      
+      background-color:grey; 
     }
+
+    .forecast, .map {
+      display: none;
+   }
 
 }
