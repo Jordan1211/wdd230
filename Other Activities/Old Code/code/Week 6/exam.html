@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<script>
+
+    var one = parseFloat(one)
+    var two = parseFloat(two)
+/* Input: insert any two numbers
+ * Processing: the program will calculate if both numbers are greater than 5 or if their sum is greater than 20
+ * Output:True will be output if processing above is true. Otherwise False will be shown
+ */
+
+    function calc() {
+        let one = parseFloat(document.getElementById('one').value);
+        let two = parseFloat(document.getElementById('two').value);
+        let combined = parseFloat(document.getElementById('one').value) + parseFloat(document.getElementById('two').value);
+        let answer = ""
+    
+ if(one > 5 && two > 5)
+        {
+            answer = "True";
+        }  
+    else if (combined > 20)
+        {
+            answer = "True";
+        }
+    else {
+            answer = "False";
+    }
+        document.getElementById('output').innerHTML = answer;            
+}
+
+</script>
+</head>
+
+<body>
+Please enter two numbers:
+<input type="text" id="one" size="5">
+<input type="text" id="two" size="5">
+<button type="button" onclick="calc()">Click</button>
+<div id="output"></div>
+</body>
+</html>

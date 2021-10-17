@@ -1,8 +1,8 @@
 @media only screen and (min-width: 64em) {
-   header, nav, main, footer, img{
+   header, main, nav, footer, img{
       max-width: 2400px;
       flex:none;
-  }
+}
   
   body {
      font-size: 2.5rem;
@@ -17,9 +17,13 @@ main ul li {
  }
 
  nav ul.hide {
-   display: flex;
-   justify-content: space-between;
    font-size: 2rem;
+   display:flex;
+   justify-content: space-evenly;
+}
+
+.forecast, .map {
+   display: inline;
 }
 
 }

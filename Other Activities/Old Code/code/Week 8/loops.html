@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Loops and iterations</title>
+    </head>
+    <body>
+        <script language="javascript" type ="text/javascript">
+            // count by 5 for(var i = 0; i < 101; i=i+5)
+            for(var i = 0; i < 101; i++)
+            //backwards would be  for(var i - 100; i > 0, i--)
+            
+            // while loop
+            // do while loop
+
+            {
+               document.write( i + "<br/>");
+              //  x=x+5;
+            }    
+
+
+            //using alerts
+
+
+
+//  while (condition) {
+//    statements;
+//    }
+
+//while          let i = 1;
+//                while (i<3) {
+//                    alert(i);
+//                    i++;
+//                }
+//                alert('Done');
+
+
+//    for (initialization;  condition;  update) {
+//    statements;
+//    }
+
+//for           for (let i=1; i<3; i++) {
+//                  alert(i);
+//                  }
+//                alert('Done');
+
+//for in
+//              for (variable in object) {
+//                  statements;
+//               }
+
+//only post test loop is do while------------
+//              do {
+//                  statements;
+//              } while (condition);
+
+//do while
+//              let i = 1;
+//              do {
+//                  alert(i);
+//                  i++;
+//              } while (i<3);
+//              alert('Done');
+
+        </script>
+    </body>
+</html>
+
+Example 3 
+let alias, response;
+do {
+    // Get the user's name.
+    alias = prompt("What is your name?");
+
+    // Ask the user if that is really her name.
+    response = prompt("Are you sure " +
+        alias + " is your name?");
+
+} while (response != "yes");
+
+// Say hello to the user.
+alert("Hello " + alias);
+
+Example 4
+let i = 1;
+while (i <= 3) {
+    alert("leaf");
+    i++;
+}
+
+Example 5
+for (let i = 3;  i >= 1;  i--) {
+    alert("caterpillar");
+}
+
+Example 14 -- shows how to put multiple numbers on one line
+let output = '0';
+let i = 2;
+while (i <= 10) {
+    output += ', ' + i;
+    i += 2;
+}
+document.getElementById('displayDiv').innerHTML = output;

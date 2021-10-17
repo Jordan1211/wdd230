@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <script>
+        // first function
+        function doPayment () {
+            //get user input
+            var principal = parseFloat(document.getElementById('principal').value);
+            var apr = parseFloat(document.getElementById('apr').value);
+            var years = parseFloat(document.getElementById('years').value);
+            var periods = parseFloat(document.getElementById('periods').value);
+            //get calculated computed payment to display
+            var monthlyPayment = computePayment(principal,apr,years,periods);
+            //display computed payment to user
+            document.getElementById('output').innerHTML = '$' + monthlyPayment;
+        }
+
+        // second function
+        function doBalance () {
+            //get user input
+            var payments = parseFloat(document.getElementById('payments').value);
+            var principal = parseFloat(document.getElementById('principal').value);
+            var apr = parseFloat(document.getElementById('apr').value);
+            var years = parseFloat(document.getElementById('years').value);
+            var periods = parseFloat(document.getElementById('periods').value);
+            //get calculated computed payment to display
+            var balance = computeBalance(principal,apr,years,periods,payments);
+            //display payoff amount to user
+            document.getElementById('outputPayoff').innerHTML = '$' + balance;
+        }
+
+        // third function
+        function computePayment (principal, apr, years, periods) {
+            var n = periods*years;
+            var r = apr/periods;
+            //calculate monthly payment p= a*r/(1-(1+r)**-n)
+            var monthlyPayment = (principal * r) / (1-(1+r)**-n); 
+            return monthlyPayment.toFixed(2)
+        }
+        // fourth function
+        //calculate payoff amount b = a*(1+r)**d - (p*((1+r)**d-1)/r)
+        function computeBalance (principal, apr, years, periods, payments) {
+            var r = apr/periods;
+            var d = payments;
+            var p = computePayment(principal,apr,years,periods);
+            var balance = (principal* (1+r)**d)-(p*((1+r)**d-1))/r;
+            return balance.toFixed(2)
+        }
+    </script>
+</head>
+
+<body>
+    <div class="user-input">
+        <h1>Investment Calculator</h1>
+    
+        <p>Amount borrowed (principal): <input type="text" id="principal"></p>
+        <p>Annual interest rate (example: .065): <input type="text" id="apr"></p>
+        <p>Number of years: <input type="text" id="years"></p>
+        <p>Payments per year: <input type="text" id="periods"></p>
+        <button type="button" onclick="doPayment()" >Compute payment</button> 
+        <div id="output" type="text"></div>
+        <p>Number of payments paid to date: <input type="text" id="payments"></p>
+        <button type="button" onclick="doBalance()">Compute payoff amount</button>
+        <div id="outputPayoff" type="text"></div>
+    </div>
+
+</body>
+
+</html>

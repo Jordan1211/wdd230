@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Testing</title>
+    <script>
+        /* Defining Table
+        * Input: no user input
+        * Processing: Test the addEnds and getMiddle functions by calling them.
+        * Output: The values returned from the addEnds and getMiddle functions.
+        */
+            function test() {
+                let list1 = [ 17, 8, 9, 5, 20 ];
+                let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+    
+                // Test the addEnds function by calling it two times.
+                let sum1 = addEnds(list1);
+                let sum2 = addEnds(list2);
+    
+                // Test the getMiddle function by calling it two times.
+                let mid1 = getMiddle(list1);
+                let mid2 = getMiddle(list2);
+    
+                // Build a string to display to the user.
+                let output =
+                    sum1 + '<br>' +
+                    sum2 + '<br>' +
+                    mid1 + '<br>' +
+                    mid2;
+    
+                // Display the output string for the user to see.
+                document.getElementById('output').innerHTML = output;
+            }
+
+            function addEnds(list) {
+                var first = list[0];
+                var last = list[list.length -1];
+                var sum = first + last;
+                return last;
+            }
+
+            function getMiddle(list) {
+                if (list.length % 2 !== 0) {
+                    let mid = list[Math.floor((list.length) / 2)];
+                    return mid;
+                }
+                else {
+                    let mid = list[list.length / 2];
+                    let add = list[(list.length / 2) - 1];
+                    let sum = (mid + add) / 2;
+                return sum;
+                }   
+            }
+        
+        </script>
+</head>
+<body>
+   <h1>Array values:</h1>
+   <p>list1 [ 17, 8, 9, 5, 20 ]</p>
+   <p>list2 [ 12, 4, 8, 15, 17, 5, 20, 11 ]</p>
+   <button type="button" onclick="test()">Test!</button>
+   <div id ="output"></div>
+</body>
+</html>

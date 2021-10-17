@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practice</title>
+    <h1>Practice</h1>
+    <script language="javascript" type="text/javascript">
+        
+        function convert() {
+            let age = parseInt(document.getElementById('ageBox').value);
+          if (age <= 12) {
+                document.write("Your a young gun");
+            }
+            else {
+                document.write("You are an old fart!");
+            }
+
+
+            
+            document.getElementById('outputDiv').innerHTML = message;
+        }
+    </script>
+
+
+
+
+
+
+
+</head>
+<body>
+    Please enter your age! <br> 
+    <input type="text" id="ageBox">
+    <button type="button" onclick="convert()">Over 12?</button>
+    <div id="outputDiv"></div>
+</body>
+</html>
+
