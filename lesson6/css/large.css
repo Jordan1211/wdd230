@@ -1,0 +1,29 @@
+@media only screen and (min-width: 64em) {
+   header, main, nav, footer, img{
+      max-width: 2400px;
+      flex:none;
+}
+  
+  body {
+     font-size: 2.5rem;
+  }
+
+button {
+   display: none;
+}
+
+main ul li {
+   background-color:#8ECAE6; 
+ }
+
+ nav ul.hide {
+   font-size: 2rem;
+   display:flex;
+   justify-content: space-evenly;
+}
+
+.forecast, .map {
+   display: inline;
+}
+
+}
