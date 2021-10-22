@@ -165,6 +165,12 @@ nav button {
     padding-left: 7rem;
 }
 
+nav button:hover{
+    background-color: white;
+    color: #13C0D4;
+    padding-right: 8rem;
+  } 
+
 .activeLink {
     color: #023047;
     font-family: 'Suez One', serif;
