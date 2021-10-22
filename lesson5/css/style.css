@@ -128,8 +128,7 @@ nav {
     color: white;
     text-decoration: none;
     display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
+    padding: .5rem;
     padding-left: 8rem;
     padding-right: 8rem;
 
@@ -163,7 +162,14 @@ nav button {
     border: none;
     font-size: 1.6rem;
     color: #fff;
+    padding-left: 7rem;
 }
+
+nav button:hover{
+    background-color: white;
+    color: #13C0D4;
+    padding-right: 8rem;
+  } 
 
 .activeLink {
     color: #023047;

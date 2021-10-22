@@ -1,4 +1,4 @@
-@media only screen and (max-width: 39.9375em) {
+@media only screen and (min-width: 40em) {
    nav ul {
       list-style-type: none;
       display:block;
@@ -7,32 +7,27 @@
       overflow: hidden;
       font-size: 2em;
    }
-   
    h1 {
       font-size: 2.3rem;
    }
-  
+
    nav ul.hide {
-     display: none;
-  }
-  
-  nav ul {
-     float:left;
+      display: none;
   }
   
   /*----- Clearfix: Force an Element not to collapse -----*/
   .clearfix:after {
-     content: "";
-     display: table;
-     clear: both;
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    main ul li {
+      background-color:grey; 
+    }
+
+    .forecast, .map {
+      display: none;
    }
-  
-   main ul li {
-     background-color:#8ECAE6;
-   }
-  
-  .forecast, .map {
-     display: none;
-  }
-  
-  }
+
+}
