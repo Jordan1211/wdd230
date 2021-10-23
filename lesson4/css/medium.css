@@ -5,10 +5,11 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      font-size: 2em;
+      font-size: 2rem;
    }
+
    h1 {
-      font-size: 2.3rem;
+      font-size: 3rem;
    }
 
    nav ul.hide {

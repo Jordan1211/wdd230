@@ -128,9 +128,9 @@ nav {
     color: white;
     text-decoration: none;
     display: flex;
-    padding: .5rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
   }
   
@@ -157,18 +157,19 @@ main a {
 }
 
 nav button {
-    margin: .2rem 2%;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
     color: #fff;
-    padding-left: 7rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
 }
 
 nav button:hover{
     background-color: white;
     color: #13C0D4;
-    padding-right: 8rem;
   } 
 
 .activeLink {
@@ -209,4 +210,10 @@ nav button:hover{
 
 body .hide {
     display: none;
+ }
+
+ .title {
+    font-size: 2.4rem;
+    font-family: 'Suez One', serif;
+    color: #023047;
  }
