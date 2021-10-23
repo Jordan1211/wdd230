@@ -7,9 +7,6 @@ function hideMessage() {
 }
     else {document.getElementById('fridayMessage').classList.add("hide");}
 }
-
-document.getElementById('weekday').textContent = weekday;
-
 /*
 function hideMessage() {
     console.log(document.getElementById("fridayMessage").classList);
