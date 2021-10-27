@@ -39,10 +39,15 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="clearfix">
         <h2>Preston Idaho</h2>
         <div class="herodiv">
-                <img class="hero-ph" src="images/heroImage.jpg" alt="Mountains (main page image)">
+            <picture class=respimg>
+                <source media="(max-width: 330px)" srcset="images/wdd230_small.webp">
+                <source media="(max-width: 760px)" srcset="images/wdd230_medium.webp">
+                <source media="(max-width: 2400px)" srcset="images/wdd230_large.webp">
+            <img class="hero-ph" src="images/wdd230_large.webp" alt="Mountains (main page image)">
+            </picture>   
                 <section class="weatherSummary">
                     <h3>Weather Summary</h3>
                     <p>Currently: Rainy
@@ -75,7 +80,7 @@
             </tr>
         </table>
 
-        <img src="images/articleImage.jpeg" alt="Map of Idaho Article Image">
+        <img src="images/articleimage.jpg" alt="Map of Idaho Article Image">
         <section class="article">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -110,7 +115,7 @@
     <script src="js/currentdate.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/hideMessage.js"></script>
-    <scripo src="js/windChill.js"></scripo>
+    <script src="js/windChill.js"></script>
 </body>
 
 </html>
