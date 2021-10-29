@@ -186,7 +186,7 @@ nav button:hover{
     margin: 10px auto;
     background-color: #eee;
     border: 1px solid #333;
-    width: 2400px;
+    width: 100%;
 }
 
 .weatherSummary {
