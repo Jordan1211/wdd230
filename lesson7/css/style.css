@@ -1,0 +1,226 @@
+body {
+    font-size: 16pt; 
+}
+
+header, main, footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+img {
+    margin: 0 auto;
+    padding: none;
+}
+
+
+header {
+    background-color: #8ECAE6;
+    padding: 1.5rem;
+}
+
+header img {
+    float: left;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-family: 'Suez One', serif;
+    color: #023047;
+}
+
+h2 {
+    font-family: 'Suez One', serif;
+    color: #fb8500;
+}
+
+.about {
+    font-family: 'Suez One', serif;
+    color: #FFB703;
+    font-size: 5rem;
+}
+
+h3 {
+    font-family: 'Suez One', serif;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul li {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer {
+    background-color: #023047;
+    color: #FFB703;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}    
+ 
+.footerlink {
+    text-decoration:none;
+   color: white;
+}
+
+.lessonlist a {
+    text-decoration:none;
+    color:black;
+}
+
+.primary {
+    background-color: #8ECAE6;
+    color: white;
+}
+
+.secondary {
+    background-color: #023047;
+    color: white;
+}
+
+.accent1 {
+    background-color: #FB8500;
+    color: white;
+}
+
+.accent2 {
+    background-color: #FFB703;
+    color: white;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+
+  .forecast th{
+      background-color: #023047;
+      color:#FFB703;
+  }
+
+  .forecast td {
+      width:20%;
+      height: 5em;
+      color:#023047;
+      align-content: center;
+      text-align: center;
+  }
+
+nav {
+    background-color: #8ECAE6;
+    max-width: 760px;
+    margin:0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: #13C0D4;
+  } 
+
+  .logo {
+    border: 3px solid #ccc;
+  }
+
+main ul li {
+    display: block;
+    margin:10px auto;
+    border:1px dashed #000;
+    background-color:#8ECAE6;
+  }
+
+main a {
+    text-decoration: none;
+    list-style: none;
+    color:white;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+nav button:hover{
+    background-color: white;
+    color: #13C0D4;
+  } 
+
+.activeLink {
+    color: #023047;
+    font-family: 'Suez One', serif;
+    text-decoration: underline;
+}
+
+.herodiv {
+    position: relative;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width: 2400px;
+}
+
+.weatherSummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background:radial-gradient(#023047, #8ECAE6);
+    border: 1px solid black;
+    color: white;
+    font-size: 32px;
+    padding: .5rem;
+}
+
+#fridayMessage {
+    background-color: #FFB703;
+    color: #023047;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+ }
+
+body .hide {
+    display: none;
+ }
+
+ .title {
+    font-size: 2.4rem;
+    font-family: 'Suez One', serif;
+    color: #023047;
+ }
+
+ .gallery {
+    display: grid;
+    align-content: start;
+ }
+
+ 
