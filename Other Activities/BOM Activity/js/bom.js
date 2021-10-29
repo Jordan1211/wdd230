@@ -22,3 +22,22 @@ button.onclick = function() {
 
   input.focus();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  getStoredList();
+});
+
+function getStoredList() {
+  try{
+  let chapters = localStorage.getItem('bomchaps');
+  if (chapters.length > 0) {
+    count.textContent = chpaters.length 
+    renderList(chapters);
+  } else {
+    count.textContent = 0;
+  }
+}
+catch (er) {
+  count.textContent = 0;
+}
+}
