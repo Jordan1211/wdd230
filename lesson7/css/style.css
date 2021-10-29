@@ -221,6 +221,25 @@ body .hide {
  .gallery {
     display: grid;
     align-content: start;
+    padding: 10px;
  }
 
+#gallery1:hover {
+    box-shadow: 0 0 50px #333;
+}
+#gallery2:hover {
+    box-shadow: 0 0 50px #333;
+}
+#gallery3:hover {
+    box-shadow: 0 0 50px #333;
+}
+#gallery4:hover {
+    box-shadow: 0 0 50px #333;
+}
+#gallery5:hover {
+    box-shadow: 0 0 50px #333;
+}
+#gallery6:hover {
+    box-shadow: 0 0 50px #333;
+}
  
