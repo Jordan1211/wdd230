@@ -31,8 +31,10 @@
       display: none;
    }
 
-   .gallery {
+   picture.gallery {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      text-align: center;
+      max-width: 760px;
   }
 }
