@@ -221,7 +221,7 @@ body .hide {
  .gallery {
     display: grid;
     align-content: start;
-    padding: 10px;
+    grid-gap: 10rem;
  }
 
 

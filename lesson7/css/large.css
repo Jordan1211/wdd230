@@ -35,12 +35,14 @@ nav ul{
 }
 .gallery {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;}
-
+   grid-template-columns: 1fr 1fr 1fr;
+   text-align: center;
 }
+   
 
 #gallery1:hover {
    box-shadow: 0 0 50px #333;
+   text-align: center;
 }
 #gallery2:hover {
    box-shadow: 0 0 50px #333;
@@ -56,4 +58,15 @@ nav ul{
 }
 #gallery6:hover {
    box-shadow: 0 0 50px #333;
+}
+#gallery7:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery8:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery9:hover {
+   box-shadow: 0 0 50px #333;
+}
+
 }
