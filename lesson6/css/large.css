@@ -1,9 +1,15 @@
 @media only screen and (min-width: 75em) {
-   header, main, nav, footer, img{
+   header, main, nav, footer {
       max-width: 2400px;
       flex:none;
 }
+
+img {
+   max-width: 100%;
+   flex:none;
+}
   
+
   body {
      font-size: 1.5rem;
   }
