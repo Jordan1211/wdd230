@@ -1,0 +1,35 @@
+@media only screen and (max-width: 39.9375em) {
+   nav ul {
+      list-style-type: none;
+      display:block;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-size: 2.5rem;
+   }
+   
+   h1 {
+      font-size: 4rem;
+   }
+  
+   nav ul.hide {
+     display: none;
+  }
+  
+  
+  /*----- Clearfix: Force an Element not to collapse -----*/
+  .clearfix:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+  
+   main ul li {
+     background-color:#8ECAE6;
+   }
+  
+  .forecast, .map {
+     display: none;
+  }
+  
+  }
