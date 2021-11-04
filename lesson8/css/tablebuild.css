@@ -11,21 +11,10 @@ table {
 	border-collapse: collapse;
 }
 
-/*
-tr:first-child th {
-	background-color: #628ca6;
-	color: white;
-}*/
-
 th, td {
 	padding: 7px 15px;
 	border: 1px solid hsl(0,0%,33%);
 }
-
-/*
-th {
-	background-color: var(#7fb9c2);
-}*/
 
 td {
 	text-align: center;
@@ -57,11 +46,3 @@ tfoot {
     background-color: #628ca6;
     color: white;
 }
-
-/*
-#e7f0ed, 
-sep, nov, dec #e7ffed (data rows) and 
-headers #628ca6, 
-top and bottom #7fb9c2 along with standard 
-white and 
-black. */
