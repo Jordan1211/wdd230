@@ -1,0 +1,67 @@
+body {
+    margin: 0 auto;
+    padding: 5rem;
+    font-family: sans-serif;
+}
+
+table {
+    margin: 10px auto;
+	border: thin solid black;
+	box-shadow: 0 0 30px hsl(0,0%,50%);
+	border-collapse: collapse;
+}
+
+/*
+tr:first-child th {
+	background-color: #628ca6;
+	color: white;
+}*/
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid hsl(0,0%,33%);
+}
+
+/*
+th {
+	background-color: var(#7fb9c2);
+}*/
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #e7ffed;
+}
+
+tfoot {
+    background-color: #7fb9c2;
+    font-size: -1rem;
+    font-style: italic;
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #7fb9c2;
+}
+
+.headers {
+    background-color: #628ca6;
+    color: white;
+}
+
+.highlight {
+    background-color: #628ca6;
+    color: white;
+}
+
+/*
+#e7f0ed, 
+sep, nov, dec #e7ffed (data rows) and 
+headers #628ca6, 
+top and bottom #7fb9c2 along with standard 
+white and 
+black. */
