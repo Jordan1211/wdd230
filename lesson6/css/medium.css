@@ -27,6 +27,16 @@
       background-color:grey; 
     }
 
+    .weathersummary, h4 {
+       font-size: 16pt;
+       margin: .25em;
+    }
+
+    .weathersummary, p {
+       font-size: 12pt;
+       margin:0;
+    }
+
     .forecast, .map {
       display: none;
    }
