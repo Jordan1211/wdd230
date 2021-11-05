@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a student website, Lesson 3 requires 
-    you to create your siteplan for the Weather Site project. This is the index.html home page for the weather site.">
-    <title> Lesson 03 Website Planning Document Home</title>
+    <meta name="description" content="This is a student website, Lesson 07 requires an image gallery to be built">
+    <title> Image Gallery</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Suez+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -43,39 +42,39 @@
         <h2>Gallery</h2>
         <picture class="gallery">
             <div id="gallery1">
-                <img src="images/imagegallery1.jpg" alt="weather image 1" width="400" height="300">
+                <img data-src="images/imagegallery1.jpg" alt="weather image 1">
                 <p>Stormy valley</p>
             </div>    
             <div id="gallery2">
-                <img src="images/imagegallery2.jpg" alt="weather image 2" width="400" height="300">
+                <img data-src="images/imagegallery2.jpg" alt="weather image 2">
                 <p>Clear Skies</p>
             </div>
             <div id="gallery3">
-                <img src="images/imagegallery3.jpg" alt="weather image 3" width="400" height="300">
+                <img data-src="images/imagegallery3.jpg" alt="weather image 3">
                 <p>Dry Lightning</p>
             </div>
             <div id="gallery4">
-                <img src="images/imagegallery4.jpg" alt="weather image 4" width="400" height="300">
+                <img data-src="images/imagegallery4.jpg" alt="weather image 4">
                 <p>Stormy Blue Skies</p>
             </div>
             <div id="gallery5">
-                <img src="images/imagegallery5.jpg" alt="weather image 5" width="400" height="300">
+                <img data-src="images/imagegallery5.jpg" alt="weather image 5">
                 <p>Fall Leaves</p>
             </div>
             <div id="gallery6">
-                <img src="images/imagegallery6.jpg" alt="weather image 6" width="400" height="300">
+                <img data-src="images/imagegallery6.jpg" alt="weather image 6">
                 <p>Storm to Come</p>
             </div>
             <div id="gallery7">
-                <img src="images/imagegallery7.jpg" alt="weather image 7" width="400" height="300">
+                <img data-src="images/imagegallery7.jpg" alt="weather image 7">
                 <p>Two Sides of Storm</p>
             </div>
             <div id="gallery8">
-                <img src="images/imagegallery8.jpg" alt="weather image 8" width="400" height="300">
+                <img data-src="images/imagegallery8.jpg" alt="weather image 8">
                 <p>High Winds</p>
             </div>
             <div id="gallery9" id="myImage">
-                <img src="images/imagegallery9.jpg" alt="weather image 9" width="400" height="300">
+                <img data-src="images/imagegallery9.jpg" alt="weather image 9">
                 <p>Sunny Forrest</p>
             </div>
             </picture>
@@ -86,10 +85,11 @@
         <div>Current Date: <span id="currentDate"></span></div>
     </footer>
     <script src="js/currentdate.js"></script>
-    <script src="js/toggleMenu.js"></script>
-    <script src="js/hideMessage.js"></script>
-    <script src="js/windChill.js"></script>
+    <script src="js/togglemenu.js"></script>
+    <script src="js/hidemessage.js"></script>
+    <!-- <script src="js/windChill.js"></script> -->
     <script src="js/observer.js"></script>
+    <script src="js/lazyload.js"></script>
 </body>
 
 </html>
