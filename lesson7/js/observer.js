@@ -1,7 +1,9 @@
+var myObserver = new IntersectionObserver(handleScrollIntoView);
+
 function handleScrollIntoView(entries) {
-    CustomElementRegistry.forEach((Entry) => {
-        var el = entry.traget;
-        if (entry.inserctionRatio >0) {
+    entries.forEach((entry) => {
+        var el = entry.target;
+        if (entry.inserctionRatio > 0) {
 
             console.log('in the view:', el.src)
         } else {
@@ -10,5 +12,5 @@ function handleScrollIntoView(entries) {
         });
     }
 
-var element = document.querySelector("#myImage")
+var element = document.querySelector("#myImage");
 myObserver.observe(element)
