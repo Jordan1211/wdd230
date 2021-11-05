@@ -33,8 +33,11 @@
   }
   
   .gallery {
-   display: grid;
    grid-template-columns: 1fr;
 }
 
+.gallery img {
+   width: 300px;
+   height: 200px;
+}
   }
