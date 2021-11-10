@@ -1,5 +1,6 @@
+function lastv () {
 let localStorage = window.localStorage;
-let today = Date.parse(new Date());
+const today = new Date();
 let visited;
 let result;
 
@@ -21,3 +22,5 @@ function setlastvisited() {
     localStorage.setItem('visited', new Date());
     visited = localStorage.getItem('visited');
 }
+}
+lastv();
