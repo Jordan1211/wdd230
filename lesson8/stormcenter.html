@@ -41,23 +41,37 @@
     <main class="clearfix">
         <h2>Storm Center Reporting</h2>
         <form action="/my-handling-form-page" method="post">
-            <ul>
-             <li>
-               <label for="name">Full Name:</label>
-               <input type="text" id="name" name="user_name" value="Enter Full Name...">
-             </li>
-             <li>
-               <label for="mail">E-mail:</label>
-               <input type="email" id="mail" name="user_email" value="Enter Email...">
-             </li>
-             <li>
-               <label for="msg">Additional Information:</label>
-               <textarea id="msg" name="user_message">Enter your message...</textarea>
-             </li>
-             <li class="button">
-             <button type="submit">Send your message</button>
-           </li>
-            </ul>
+            <label for="name">Full Name</label>
+               <input type="text" id="name" name="full_name">
+            <label for="mail">E-mail</label>
+               <input type="email" id="mail" name="email">
+            <label for="phone">Phone Number</label>
+                <input type="tel" id="telephone" name="telephone">
+            <label for="zip">Zip Code</label>
+                <input type="number" id="zip" name="zip">
+            <label for="stormdate">Storm Date</label>
+                <input type="date" id="stormdate" name="stormdate">
+            <label for="stormtype">Storm Type</label>
+                <input type="list" id="stormtype" name="stormtype">
+                    <!-- Flash Flood
+                    Hail 
+                    Hurricane 
+                    Thunderstorm 
+                    Tornado  -->
+            <label for="stormseverity">Storm Severity</label> 
+                <input type="range" id="stormseverity" name="stormseverity">
+                    <!-- range 1-10 -->
+            <label for="stormregion">Storm Region</label> 
+                <input type="select" id="stormregion" name="stormregion">
+                    <!-- Select Region ... (disabled) 
+                    Preston
+                    Soda Springs
+                    Fish Haven -->
+            <label for="userin-dangerlevel">User In-Danger Level</label>
+                <input type="radio" id="userin-dangerlevel" name="userin-dangerlevel"> 
+            <label for="msg">Additional Information:</label>
+               <textarea id="msg" name="message">Enter your message...</textarea>
+            <button type="submit">Submit</button>
         </form>
     </main>
 

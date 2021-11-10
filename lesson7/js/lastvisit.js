@@ -1,11 +1,23 @@
-function populatevisit() {
-    localStorage.setItem('visited',document.getElementById('visited').value);
+let localStorage = window.localStorage;
+let today = Date.parse(new Date());
+let visited;
+let result;
+
+if(visited == null) {
+    localStorage.setItem('visited',today);
+    result = "This is your 1st time on this site, Welcome!";
+    document.getElementById('visitDate').innerHTML = result;
+} else {
+    setlastvisited();
 }
 
 function setlastvisited() {
-    const lastvisit = localStorage.getItem('visited');
+    lastVisit = Date.parse(localStorage.getItem('visited'));
+    result = today - lastVisit;
+    document.getElementById("visitDate").innerHTML = "Your last visit was [ " + result +  " ] days ago.";
 
-    document.getElementById('visited').value = lastvisit;
-
-   document.querySelector('lastvisitdays') = Date() - lastvisit;
+    localStorage.removeItem('visited');
+    localStorage.clear('visited');
+    localStorage.setItem('visited', new Date());
+    visited = localStorage.getItem('visited');
 }

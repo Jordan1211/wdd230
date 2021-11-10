@@ -1,7 +1,5 @@
 fetch("https://maps.googleapis.com/maps/api/js?key=AIzaSyChcfH2ffkBU-mqtryWx_zBXhNsWy-Ycgk");
 
-"https://www.nap.st/google_map_generator/?lang=en"
-
 google.maps.event.addDomListener(window, 'load', function() {
 	var mapdiv = document.getElementById('user_gmap');
 	var myOptions = {
