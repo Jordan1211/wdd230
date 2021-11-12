@@ -218,6 +218,51 @@ body .hide {
     color: #023047;
  }
 
- .form {
-     display: inline;
+ form fieldset {
+     margin: 2rem 0;
+     border: 1px solid #023047;
+     border-radius: 10px;
+     padding: .5rem 2%;
+ }
+
+ form legend {
+    color: #484a4b;
+    margin: 0 1rem;
+    padding: 0 .543m;
+ }
+
+ form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+ }
+
+ form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 20rem;   
+ }
+
+.submitbutton {
+     border: none;
+     background-color: #8ECAE6;
+     color:#484a4b;
+     border-radius: 1rem;
+     padding: .75rem 1.5rem;
+     margin: 0 0 2rem 2%;
+     width: 96%;
+     max-width: 20rem;
+ }
+
+ form label.top input:required {
+     border-left: red solid 6px;
+ }
+
+ form label.top input:required:valid {
+     border-left: green solid 6px;
  }
