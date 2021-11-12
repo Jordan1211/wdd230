@@ -217,3 +217,7 @@ body .hide {
     font-family: 'Suez One', serif;
     color: #023047;
  }
+
+ .form {
+     display: inline;
+ }
