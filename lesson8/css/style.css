@@ -266,3 +266,15 @@ body .hide {
  form label.top input:required:valid {
      border-left: green solid 6px;
  }
+
+ .regex {
+    border-left: red solid 6px;
+ }
+
+ #rating {
+     padding:0;
+ }
+
+ .radio {
+     padding:1.5rem;
+ }

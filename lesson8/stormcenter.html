@@ -55,7 +55,7 @@
         <fieldset>
           <legend>User Information</legend>
           <label class="top"
-            >Full Name* <input type="text" name="full_name" required
+            >Full Name* <input type="text" name="full_name" id="fullname" required
           /></label>
           <label class="top"
             >E-mail*
@@ -94,7 +94,10 @@
               max="10"
               step="1"
               list="tickmarks"
-          /></label>
+              id="rating"
+              oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" />
+			    <span id="ratingvalue">5</span>
+          </label>
           <datalist id="tickmarks">
             <option value="0"></option>
             <option value="1"></option>
@@ -112,15 +115,15 @@
           <label class="top"
             >Storm Region
             <select name="stormregion">
-              <option value="">Select Region ...</option>
+              <option value="" selected disabled>Select Region ...</option>
               <option value="preston">Preston</option>
               <option value="sodasprings">Soda Springs</option>
               <option value="fishhaven">Fish Haven</option>
             </select>
           </label>
           <div>User In-Danger Level?</div>
-          <label class="top"><input type="radio" name="danger" value="Yes" /> Yes </label>
-          <label class="top"><input type="radio" name="danger" value="No" /> No </label>
+          <label class="radio"><input  type="radio" name="danger" value="Yes" /> Yes </label>
+          <label class="radio"><input type="radio" name="danger" value="No" /> No </label>
           <label class="top"
             >Additional Information:
             <textarea
@@ -141,6 +144,8 @@
     <script src="js/currentdate.js"></script>
     <script src="js/togglemenu.js"></script>
     <script src="js/hidemessage.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/regexname.js"></script>
     <!-- <script src="js/windChill.js"></script> -->
     <!-- <script src="js/observer.js"></script> -->
     <!-- <script src="js/lazyload.js"></script> -->
