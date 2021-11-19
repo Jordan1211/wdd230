@@ -16,6 +16,8 @@
         document.querySelector('#windChill').textContent = result.toFixed(1);
     }
     else {
-        let result = 'N/A'
+        let result = 'Wind Speed <= 3 or Temp < 50'
         document.querySelector('#windChill').textContent = result;
     }
+
+
