@@ -1,0 +1,22 @@
+
+
+body {
+    margin: 5% auto;
+    max-width: 760px;
+    background-color: lightsalmon;
+}
+
+
+.box {
+    background:darkgray;
+    border-radius: 2px;
+    border-color: black;
+    display: inline-block;
+    height: 400px;
+    position: relative;
+    width: 600px;
+  }
+
+ 
+  #user_gmap{ width:600px;height:400px; margin:20px20px 0px; border:solid 1px #111; }
+  #user_glink {width:600px; text-align:right; font-size:10px; font-weight:normal; padding:0px; height:20px; margin:0px;}

@@ -55,7 +55,7 @@
         <fieldset>
           <legend>User Information</legend>
           <label class="top"
-            >Full Name* <input type="text" name="full_name" id="fullname" required
+            >Full Name* (Must be 5 or more letters with no numbers)<input type="text" pattern="[a-zA-z\s]{5,}" name="full_name" required
           /></label>
           <label class="top"
             >E-mail*
@@ -145,7 +145,6 @@
     <script src="js/togglemenu.js"></script>
     <script src="js/hidemessage.js"></script>
     <script src="js/rating.js"></script>
-    <script src="js/regexname.js"></script>
     <!-- <script src="js/windChill.js"></script> -->
     <!-- <script src="js/observer.js"></script> -->
     <!-- <script src="js/lazyload.js"></script> -->
