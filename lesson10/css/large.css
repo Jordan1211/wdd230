@@ -14,7 +14,7 @@ img {
      font-size: 1.5rem;
   }
 
-nav button {
+button {
    display: none;
 }
 
@@ -39,10 +39,5 @@ nav ul{
 .forecast, .map {
    display: inline;
 }
-
-form fieldset {
-   max-width: 50%;
-}
-
 
 }

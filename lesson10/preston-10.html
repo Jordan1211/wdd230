@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This is a student website, Lesson 08 requires a storm center reporting form"
-    />
-    <title>Weathery Conditions Home Page</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Suez+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a student website, Lesson 3 requires 
+    you to create your siteplan for the Weather Site project. This is the index.html home page for the weather site.">
+    <title> Lesson 03 Website Planning Document Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-    <link rel="shortcut icon" href="images/weatherFavicon.ico" />
-  </head>
+    <link rel="shortcut icon" href='images/weatherFavicon.ico'/>
+</head>
 
-  <body onload="hideMessage()">
+<body onload="hideMessage()">
     <div id="fridayMessage" class="hide">
         <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion</p>
     </div>
@@ -44,28 +40,46 @@
     </nav>
 
     <main>
-        <h2>Home Page</h2>
+        <h2>Preston Idaho</h2>
         <div class="herodiv">
             <picture class=respimg>
                 <source srcset="images/wdd230_small.jpg" media="(max-width: 330px)">
                 <source srcset="images/wdd230_medium.jpg" media="(max-width: 780px)">
                 <img class="hero-ph" src="images/wdd230_large.jpg" alt="Mountains (main page image)">
             </picture>   
-                <!-- <section class="weatherSummary">
+                <section class="weatherSummary">
                     <h4>Weather Summary</h4>
-                    <p>Currently: Rainy
-                    <br>High: <span id="temp">54</span>&#176; F
-                    <br>Wind Chill: <span id="windChill"></span>&#176; F
-                    <br>Humidity: 95%
-                    <br>Wind Speed: <span id="speed">12</span> mph
+                    <p>Current Conditions: <span id="condition"></span>
+                    <br>Current Temperature: <span id="temp"><span id="current-temp"> </span> &#176;F</span>
+                    <br>Wind Chill: <span id="windChill"></span><span> &#176;F </span>
+                    <br>Humidity: <span id="humidity"></span>
+                    <br>Wind Speed: <span id="speed">12</span><span> mph</span>
                     </p>
-                </section> -->
+                </section>
         </div>
-        <div class="cards">
-
-        </div>
-        <a href="../lesson9/wireframe.html">Wireframe for Site</a>
-        <section class="article"></section>
+        <table class="forecast">
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <td><img id = "sun-img" src=""> <br><span id="sun-temp">76&#176; F</span></td>
+                <td><img id = "sun-img" src=""> <br><span id="mon-temp">50&#176; F</span></td>
+                <td><img id = "sun-img" src=""> <br><span id="tue-temp">55&#176; F</span></td>
+                <td><img id = "sun-img" src=""> <br><span id="wed-temp">68&#176; F</span></td>
+                <td><img id = "sun-img" src=""> <br><span id="thu-temp">76&#176; F</span></td>
+                <td><img id = "sun-img" src=""> <br><span id="fri-temp">62&#176; F</span></td>
+                <td><img id = "sun-img" src=""> <br><span id="sat-temp">76&#176; F</span></td>
+            </tr>
+        </table>
+        
+        <section class="article">
+            <h3>All About Us</h3>
             <img src="images/articleimage.jpg" alt="Map of Idaho Article Image">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -75,9 +89,59 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
                 officia deserunt mollit anim id est laborum.
             </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+              officia deserunt mollit anim id est laborum.
+          </p>
+          <br>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum.
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+              officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+              officia deserunt mollit anim id est laborum.
+            </p>
         </section>
+        <img class="map" src="images/idahomap.png" alt="Soda Springs, Preston, Fish Haven Map">
         <section class="contactInfo">
-            <img class="map" src="images/idahomap.png" alt="Soda Springs, Preston, Fish Haven Map">
             <h3>Weathery Conditions</h3>
             <p>&#10154; 30 N 1st E <br> Preston, ID 83263</p>
             <p>&#9742; (999)999-9999</p>
@@ -86,14 +150,14 @@
     </main>
 
     <footer>
-      &copy; Weathery Conditions | Attributions | Jordan Gresham
-      <div>Current Date: <span id="currentDate"></span></div>
+        &copy; Weathery Conditions | Attributions | Jordan Gresham
+        <div>Current Date: <span id="currentDate"></span></div>
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/togglemenu.js"></script>
     <script src="js/hidemessage.js"></script>
-    <script src="js/towndata.js"></script>
-    <script src="js/lazyload.js"></script>
-    <script src="js/weatherapi.js"></script>
-  </body>
+    <script src="js/windchill.js"></script>
+    <script src="js/prestonweather.js"></script>
+</body>
+
 </html>
