@@ -277,6 +277,52 @@ body .hide {
     margin: 5px;
 }
 
-.cards section img {
-    float: right;
+#Preston {
+    text-align:start;
+}
+
+#Preston img {
+    float:right;
+    margin-top: -5%;
+}
+
+#Fish\ Haven {
+    text-align:end;
+    align-content: start;
+}
+
+#Fish\ Haven img {
+    float:left;
+    margin-top: -5%;
+}
+
+#Soda\ Springs {
+    text-align:start;
+    align-content: end;
+}
+
+#Soda\ Springs img {
+    margin-top: -5%;
+    float:right;
+}
+
+.article {
+    text-align: justify;
+    display: block;
+    min-height: 500px;
+}
+
+.article img {
+    float: left;
+    margin: 5px;
+}
+
+.contactInfo {
+    font-size: 12pt;
+}
+
+.wireframe {
+    color: orange ;
+    text-decoration: underline;
+    padding-left: 40%;
 }
