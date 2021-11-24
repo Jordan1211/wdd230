@@ -1,0 +1,57 @@
+@media only screen and (min-width: 40em) {
+   nav ul {
+      list-style-type: none;
+      display:block;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-size: 2rem;
+   }
+
+   h1 {
+      font-size: 3rem;
+   }
+
+   nav ul.hide {
+      display: none;
+  }
+  
+  /*----- Clearfix: Force an Element not to collapse -----*/
+  .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    main ul li {
+      background-color:grey; 
+    }
+
+    .weathersummary, h4 {
+       font-size: 16pt;
+       margin: .25em;
+    }
+
+    .weathersummary, p {
+       font-size: 12pt;
+       margin:0;
+    }
+
+    .forecast, .map {
+      display: none;
+   }
+
+   .gallery {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .gallery img {
+      width: 300px;
+      height: 200px;
+   }
+
+   .cards img {
+      max-width: 300px;
+  }
+
+}

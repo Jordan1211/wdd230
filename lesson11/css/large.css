@@ -1,0 +1,145 @@
+@media only screen and (min-width: 75em) {
+   header, main, nav, footer {
+      max-width: 2400px;
+      flex:none;
+}
+
+img {
+   max-width: 100%;
+   flex:none;
+}
+  
+
+  body {
+     font-size: 1.5rem;
+  }
+
+nav button {
+   display: none;
+}
+
+main ul li {
+   background-color:#8ECAE6; 
+ }
+
+
+nav ul{
+   font-size: 2rem;
+   display: flex;
+   justify-content: space-evenly;
+   float: none;
+}
+
+ nav ul.hide {
+   font-size: 2rem;
+   display:flex;
+   justify-content: space-evenly;
+}
+
+.forecast, .map {
+   display: inline;
+}
+
+form fieldset {
+   max-width: 50%;
+}
+
+.gallery {
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery img {
+   width: 400px;
+   height: 300px;
+}
+
+#gallery1:hover {
+   box-shadow: 0 0 50px #333;
+   text-align: center;
+}
+#gallery2:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery3:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery4:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery5:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery6:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery7:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery8:hover {
+   box-shadow: 0 0 50px #333;
+}
+#gallery9:hover {
+   box-shadow: 0 0 50px #333;
+}
+
+#Preston {
+   align-content: center;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 15% 15% 15% 15% 15%;
+   text-align:start;
+}
+
+#Preston img {
+   align-content:end;
+   grid-column: 2;
+   grid-row-start: 2;
+   grid-row-end: 4;
+}
+
+#Preston p , #Preston h3 , #Preston h4 {
+   grid-column: 1;
+}
+
+#Fish\ Haven {
+   align-content: center;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 15% 15% 15% 15% 15%;
+   text-align:end;
+}
+
+#Fish\ Haven img {
+   align-content:start;
+   grid-column: 1;
+   grid-row-start: 2;
+   grid-row-end: 4;
+}
+
+#Fish\ Haven p , #Fish\ Haven h3 , #Fish\ Haven h4 {
+   grid-column: 2;
+}
+
+#Soda\ Springs {
+   align-content: center;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 15% 15% 15% 15% 15%;
+   text-align:start;}
+
+#Soda\ Springs img {
+   align-content:end;
+   grid-column: 2;
+   grid-row-start: 2;
+   grid-row-end: 4;
+}
+
+#Soda\ Springs p , #Soda\ Springs h3 , #Soda\ Springs h4 {
+   grid-column: 1;
+}
+
+.cards img {
+   max-width: 397px;
+}
+
+}
