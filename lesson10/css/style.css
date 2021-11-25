@@ -103,17 +103,20 @@ footer {
     height: 3em;
   }
 
+  .forecast tr{
+      max-width: 100%;
+  }
   .forecast th{
       background-color: #023047;
       color:#FFB703;
   }
 
   .forecast td {
-      width:15%;
       height: 5em;
       color:#023047;
-      align-content: center;
       text-align: center;
+      background-color: lightgray;
+      width: 300px;
   }
 
 nav {

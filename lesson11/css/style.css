@@ -109,12 +109,12 @@ footer {
   }
 
   .forecast td {
-      width:15%;
-      height: 5em;
-      color:#023047;
-      align-content: center;
-      text-align: center;
-  }
+    height: 5em;
+    color:#023047;
+    text-align: center;
+    background-color: lightgray;
+    width: 300px;
+}
 
 nav {
     background-color: #8ECAE6;
