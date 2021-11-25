@@ -26,6 +26,7 @@ fetch(requestURL)
         p3.textContent = `Annual Rain Fall: ${town.averageRainfall}`;
 
         image.setAttribute('src', `images/${town.photo}`);
+        image.setAttribute('alt', town.name);
         // image.setAttribute('alt', `${prophet.name} ${prophet.lastname} - ${prophet.order}`);
         card.setAttribute('id', town.name)
         card.appendChild(h3);
