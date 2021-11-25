@@ -307,6 +307,7 @@ form label.top input:required:valid {
     float: left;
     margin: 24px;
     margin-left: 0;
+    max-width: 100%;
 }
 
 .contactInfo {
@@ -316,7 +317,8 @@ form label.top input:required:valid {
 .wireframe {
     color: orange ;
     text-decoration: underline;
-    padding-left: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .weatherSummary p {
