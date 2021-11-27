@@ -113,7 +113,7 @@ footer {
     color:#023047;
     text-align: center;
     background-color: lightgray;
-    width: 300px;
+    width: 350px;
 }
 
 nav {
@@ -286,10 +286,6 @@ form label.top input:required:valid {
     padding:1.5rem;
 }
 
-#Franklin, #Placerton, #Greenville, #Springfield {
-    display:none;
-}
-
 .cards section {
     background-color: #8ECAE6;
     padding: 1rem;
@@ -308,6 +304,10 @@ form label.top input:required:valid {
     margin: 24px;
     margin-left: 0;
     max-width: 100%;
+}
+
+.article a {
+    color: #FFB703;
 }
 
 .contactInfo {
@@ -340,4 +340,12 @@ img.map {
 
 .cards img {
     max-width: 200px;
+}
+
+section.eventsection {
+    background-color: #8ECAE6;
+    color:#484a4b;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
 }
