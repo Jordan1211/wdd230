@@ -82,64 +82,43 @@ form fieldset {
    box-shadow: 0 0 50px #333;
 }
 
+.cards img {
+ display: block;
+ width: 150px;
+}
+
+.cards {
+   display: flex;
+   justify-content: space-evenly;
+}
+
 #Preston {
-   align-content: center;
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-template-rows: 15% 15% 15% 15% 15%;
-   text-align:start;
-}
-
-#Preston img {
-   align-content:end;
-   grid-column: 2;
-   grid-row-start: 2;
-   grid-row-end: 4;
-}
-
-#Preston p , #Preston h3 , #Preston h4 {
-   grid-column: 1;
+   width: 27%;
+   align-content: space-evenly;
+   text-align: center;
+   display: block;
 }
 
 #Fish\ Haven {
-   align-content: center;
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-template-rows: 15% 15% 15% 15% 15%;
-   text-align:end;
-}
-
-#Fish\ Haven img {
-   align-content:start;
-   grid-column: 1;
-   grid-row-start: 2;
-   grid-row-end: 4;
-}
-
-#Fish\ Haven p , #Fish\ Haven h3 , #Fish\ Haven h4 {
-   grid-column: 2;
+   width: 27%;
+   align-content: space-evenly;
+   text-align: center;
+   display: block;
 }
 
 #Soda\ Springs {
-   align-content: center;
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-template-rows: 15% 15% 15% 15% 15%;
-   text-align:start;}
-
-#Soda\ Springs img {
-   align-content:end;
-   grid-column: 2;
-   grid-row-start: 2;
-   grid-row-end: 4;
+   width: 27%;
+   align-content: space-evenly;
+   text-align: center;
+   display: block;
 }
 
-#Soda\ Springs p , #Soda\ Springs h3 , #Soda\ Springs h4 {
-   grid-column: 1;
+.article p {
+   padding: 1.5rem;
+   font-size: 2rem;
 }
 
-.cards img {
-   max-width: 397px;
-}
+.contactInfo {font-size: 2rem;}
+
 
 }
