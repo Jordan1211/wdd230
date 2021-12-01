@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="This site is for any that are looking to use Lehi as a home for their business or individuals looking into the city."
+      content=""
+    />
+    <titleLehi City Chamber of Commerce>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Suez+One&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <!-- <link rel="shortcut icon" href="images/weatherFavicon.ico" /> -->
+  </head>
+
+  <body >
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="Site logo"/></a> 
+        <h1>Lehi City Chamber of Commerce</h1>
+            <p>Come visit our pioneer spirit!</p>
+    </header>
+
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+          <li><a class="activeLink" href="index.html">Home</a></li>
+          <li><a href="city.html">Lehi City</a></li>
+          <li><a href="join.html">Join Membership</a></li>
+          <li><a href="directory.html">Local Directory</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Home Page</h2>
+      <div class="herodiv">
+          <picture class=respimg>
+              <source srcset="images/wdd230_small.jpg" media="(max-width: 330px)">
+              <source srcset="images/wdd230_medium.jpg" media="(max-width: 780px)">
+              <img class="hero-ph" src="images/wdd230_large.jpg" alt="Mountains (main page image)">
+          </picture>
+          
+          <section class="weatherSummary">
+            <h4>Current Weather</h4>
+            <p>Temperature: <span id="temp"><span id="current-temp"> </span> &#176;F</span></p>
+            <p>Conditions: <span id="condition"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+          </section>
+      </div>
+      
+      <table class="forecast">
+        <tr>
+            <th id="dayofweek1"></th>
+            <th id="dayofweek2"></th>
+            <th id="dayofweek3"></th>
+        </tr>
+        <tr>
+            <td><img id = "icon1"> <br><span id="forecast1"></span></td>
+            <td><img id = "icon2"> <br><span id="forecast2"></span></td>
+            <td><img id = "icon3"> <br><span id="forecast3"></span></td>
+        </tr>
+      </table>
+      
+      <div class="action">
+        <a href="join.html"><button>Join Us!</button></a> 
+        <p>The Lehi City Chamber of Commerce is a group that focuses on the building up of our city. We want hard working people to bring 
+          their business in and build up the community. We want to invite you to come to Lehi and join in our culture.</p>
+      </div>
+
+      <div class="cards"></div>
+
+      <div class="contactInfo">
+        <h3>Lehi City Contact Info</h3>
+        <p>&#10154; 153 N 100 E <br> Lehi, UT 84043</p>
+        <p>&#9742; (385)201-1000</p>
+        <p>&#9993; www.lehi-ut.gov</p>
+      </div>
+
+    </main>
+
+    <footer>
+      &copy; Lehi Chamber of Commerce | <a href="attributions.html">Attributions</a> | Jordan Gresham
+      <div>Current Date: <span id="currentDate"></span></div>
+    </footer>
+    
+    <script src="js/currentdate.js"></script>
+    <script src="js/forecast.js"></script>
+    <!-- <script src="js/togglemenu.js"></script> -->
+    <!-- <script src="js/hidemessage.js"></script> -->
+    <!-- <script src="js/towndata.js"></script> -->
+    <!-- <script src="js/windChill.js"></script> -->
+    <!-- <script src="js/observer.js"></script> -->
+    <!-- <script src="js/lazyload.js"></script> -->
+  </body>
+</html>

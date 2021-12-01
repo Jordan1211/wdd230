@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a student website, Lesson 07 requires an image gallery to be built">
+    <title> Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href='images/weatherFavicon.ico'/>
+</head>
+
+<body>
+    <div id="fridayMessage" class="hide">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion</p>
+    </div>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="Site logo"/></a> 
+        <h1>Weathery Conditions</h1>
+            <p>Southern Idaho is full of adventure <i>"Weather"</i> you believe it or not!</p>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a class="activeLink" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+        <h2>Gallery</h2>
+        <picture class="gallery">
+            <div id="gallery1">
+                <img data-src="images/imagegallery1.jpg" alt="weather image 1">
+                <p>Stormy valley</p>
+            </div>    
+            <div id="gallery2">
+                <img data-src="images/imagegallery2.jpg" alt="weather image 2">
+                <p>Clear Skies</p>
+            </div>
+            <div id="gallery3">
+                <img data-src="images/imagegallery3.jpg" alt="weather image 3">
+                <p>Dry Lightning</p>
+            </div>
+            <div id="gallery4">
+                <img data-src="images/imagegallery4.jpg" alt="weather image 4">
+                <p>Stormy Blue Skies</p>
+            </div>
+            <div id="gallery5">
+                <img data-src="images/imagegallery5.jpg" alt="weather image 5">
+                <p>Fall Leaves</p>
+            </div>
+            <div id="gallery6">
+                <img data-src="images/imagegallery6.jpg" alt="weather image 6">
+                <p>Storm to Come</p>
+            </div>
+            <div id="gallery7">
+                <img data-src="images/imagegallery7.jpg" alt="weather image 7">
+                <p>Two Sides of Storm</p>
+            </div>
+            <div id="gallery8">
+                <img data-src="images/imagegallery8.jpg" alt="weather image 8">
+                <p>High Winds</p>
+            </div>
+            <div id="gallery9" id="myImage">
+                <img data-src="images/imagegallery9.jpg" alt="weather image 9">
+                <p>Sunny Forrest</p>
+            </div>
+            </picture>
+    </main>
+
+    <footer>
+        &copy; Weathery Conditions | Attributions | Jordan Gresham | <span id="visitDate"></span>
+        <div>Current Date: <span id="currentDate"></span></div>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/togglemenu.js"></script>
+    <script src="js/hidemessage.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/lastvisit.js"></script>
+</body>
+
+</html>
