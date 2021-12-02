@@ -37,7 +37,7 @@ nav ul{
 }
 
 .forecast, .map {
-   display: inline;
+   display: flex;
 }
 
 form fieldset {
