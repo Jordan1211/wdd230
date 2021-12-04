@@ -260,10 +260,12 @@ form label.top input:required:valid {
 
 .cards section {
     background-color: #8ECAE6;
-    padding: 1rem;
-    margin-bottom: 50px;
+    padding: 1.5rem;
+    margin: 5px;
     max-height: 400px;
+    text-align: center;
 }
+
 
 .article {
     text-align: justify;
@@ -328,3 +330,7 @@ section.eventsection {
     grid-template-columns: 10% 90%;
     padding: 1.5rem;
 }
+
+ 
+  #user_gmap{ width:600px;height:400px; margin:20px20px 0px; border:solid 1px #111; }
+  #user_glink {width:600px; text-align:right; font-size:10px; font-weight:normal; padding:0px; height:20px; margin:0px;}

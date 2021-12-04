@@ -50,14 +50,9 @@
       height: 200px;
    }
 
-   .cards img {
-      max-width: 300px;
-  }
-
-  .cards h4, .cards p {
-     padding: 0;
-     padding-top: .5rem;
-     margin: 0;
+   .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
   }
 
 #Preston {
