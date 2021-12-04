@@ -82,14 +82,8 @@ form fieldset {
    box-shadow: 0 0 50px #333;
 }
 
-.cards img {
- display: block;
- width: 150px;
-}
-
 .cards {
-   display: flex;
-   justify-content: space-evenly;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #Preston {

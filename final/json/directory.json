@@ -1,0 +1,67 @@
+{
+    "directory": [
+      {
+        "name": "Business1" ,
+        "phone": "000-000-0000",
+        "address": "1234 Fake St",
+        "city": "Lehi, UT 84043",
+        "logo": "logo",
+        "link": "www.fake.com",
+        "order":"1"
+      },
+      {
+        "name": "Business2" ,
+        "phone": "000-000-0000",
+        "address": "1234 Fake St",
+        "city": "Lehi, UT 84043",
+        "logo": "logo",
+        "link": "www.fake.com",
+        "order":"2"
+      },
+      {
+        "name": "Business3" ,
+        "phone": "000-000-0000",
+        "address": "1234 Fake St",
+        "city": "Lehi, UT 84043",
+        "logo": "logo",
+        "link": "www.fake.com",
+        "order":"3"
+      },
+      {
+        "name": "Business4" ,
+        "phone": "000-000-0000",
+        "address": "1234 Fake St",
+        "city": "Lehi, UT 84043",
+        "logo": "logo",
+        "link": "www.fake.com",
+        "order":"4"
+      },
+      {
+        "name": "Business5" ,
+        "phone": "000-000-0000",
+        "address": "1234 Fake St",
+        "city": "Lehi, UT 84043",
+        "logo": "logo",
+        "link": "www.fake.com",
+        "order":"5"
+      },
+      {
+        "name": "Business6" ,
+        "phone": "000-000-0000",
+        "address": "1234 Fake St",
+        "city": "Lehi, UT 84043",
+        "logo": "logo",
+        "link": "www.fake.com",
+        "order":"6"
+      },
+      {
+        "name": "Business7" ,
+        "phone": "000-000-0000",
+        "address": "1234 Fake St",
+        "city": "Lehi, UT 84043",
+        "logo": "logo",
+        "link": "www.fake.com",
+        "order":"7"
+      }
+    ]
+}

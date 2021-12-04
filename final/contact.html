@@ -28,16 +28,73 @@
     <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776; Menu</button>
       <ul id="primaryNav" class="hide">
-          <li><a class="activeLink" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="city.html">Lehi City</a></li>
           <li><a href="join.html">Join Membership</a></li>
           <li><a href="directory.html">Local Directory</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a class="activeLink" href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
+
+    <main>
+      <div class="contactInfo">
+        <h2>Lehi City Contact Info</h2>
+        <h3>&#10154; 153 N 100 E <br> Lehi, UT 84043</h3>
+        <h3>&#9742; (385)201-1000</h3>
+        <h3>&#9993; www.lehi-ut.gov</h3>
+      </div>
+
+      <div id="user_gmap"></div>
+
+        <form action="thanks.html" method="get">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label class="top"
+              >First Name* (must be 5 or more letters with no numbers)<input type="text" pattern="[a-zA-z\s]{5,}" name="first_name" required
+            /></label>
+            <label class="top"
+            >Last Name*<input type="text" name="last_name" required
+            /></label>
+
+            <label class="top"
+              >E-mail*
+              <input
+                type="email"
+                name="email"
+                placeholder="johndoe@gmail.com"
+            /></label>
+            <label class="top"
+              >Cell Phone Number <input type="tel" name="telephone"
+            /></label>
+            <label class="top"> Comment
+              <textarea
+                type="text"
+                name="message"
+                placeholder="Enter Message Here"
+              ></textarea>
+            </fieldset>
+            <button class="submitbutton" type="submit">Contact Us</button> 
+        </form>
+
+      <div>
+        <h3>Board of Directors</h3>
+        <ul>
+          <li>John Jacobs</li>
+          <li>Lilly Evans</li>
+          <li>Richard Davis</li>
+        </ul>
+      </div>
+
+    </main>
 
     <footer>
     &copy; Lehi Chamber of Commerce | <a href="attributions.html">Attributions</a> | Jordan Gresham
     <div>Current Date: <span id="currentDate"></span></div>
     </footer>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChcfH2ffkBU-mqtryWx_zBXhNsWy-Ycgk"></script>
+    <script src="js/api.js"></script>
+    <script src="js/currentdate.js"></script>
   </body>
+</html>
