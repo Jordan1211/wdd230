@@ -37,16 +37,16 @@
     </nav>
 
     <main>
-      <div class="contactInfo">
+      <div class="contact">
         <h2>Lehi City Contact Info</h2>
         <h3>&#10154; 153 N 100 E <br> Lehi, UT 84043</h3>
         <h3>&#9742; (385)201-1000</h3>
         <h3>&#9993; www.lehi-ut.gov</h3>
       </div>
-
+      
       <div id="user_gmap"></div>
 
-        <form action="thanks.html" method="get">
+      <form action="thanks.html" method="get">
           <fieldset>
             <legend>Personal Information</legend>
 
@@ -79,11 +79,30 @@
 
       <div>
         <h3>Board of Directors</h3>
-        <ul>
-          <li>John Jacobs</li>
-          <li>Lilly Evans</li>
-          <li>Richard Davis</li>
-        </ul>
+        <div class="cards">
+          <section>
+            <img src="images/member_mentatdgt_man.jpg">
+            <h2>John Jacobs</h2>
+           <p>President</p>
+          </section>
+          
+          <section>
+            <img src="images/member_mentatdgt_woman.jpg"">
+            <h2>Lilly Evans</h2>
+           <p>Vice President</p>
+          </section>
+
+          <section>
+            <img src="images/member_moose.jpg">
+            <h2>Richard Davis</h2>
+           <p>Treasurer</p>
+          </section>
+
+          <section>
+            <img src="images/member_emmy.jpg">
+            <h2>Christina Klue</h2>
+           <p>Director</p>
+          </section>
       </div>
 
     </main>
@@ -96,5 +115,6 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChcfH2ffkBU-mqtryWx_zBXhNsWy-Ycgk"></script>
     <script src="js/api.js"></script>
     <script src="js/currentdate.js"></script>
+    <script src="js/togglemenu.js"></script>
   </body>
 </html>
