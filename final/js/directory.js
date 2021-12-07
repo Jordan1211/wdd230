@@ -18,17 +18,22 @@ fetch(directory)
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
         let image = document.createElement('img');
+        let link = document.createElement('a');
         
         h2.textContent = business.name;
         p.textContent = business.phone;
         p2.textContent = business.address;
         p3.textContent = business.city;
-        image.setAttribute('src', business.logo);
+        link.textContent = business.link;
+        image.setAttribute('src', `images/${business.logo}.jpg`);
         image.setAttribute('alt', `${business.name} - ${business.order}`);
-        card.appendChild(h2);
+        link.setAttribute('href', business.link);
         card.appendChild(image);
+        card.appendChild(h2);
         card.appendChild(p);
         card.appendChild(p2);
+        card.appendChild(p3);
+        card.appendChild(link);
         
         document.querySelector('div.cards').appendChild(card);
   });

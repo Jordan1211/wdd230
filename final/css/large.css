@@ -19,7 +19,7 @@ nav button {
 }
 
 main ul li {
-   background-color:#8ECAE6; 
+   background-color:#45611F; 
  }
 
 
@@ -114,5 +114,18 @@ form fieldset {
 
 .contactInfo {font-size: 2rem;}
 
+.action {
+   display: grid;
+   grid-template-columns: 10% 90%;
+   grid-gap: 1rem;
+   padding: 1.5rem;
+   margin: 50px;
+   background-color: #005776;
+   color: #f5f3f0;  
+}
+
+.action p {
+   font-size: 1.5rem;
+}
 
 }

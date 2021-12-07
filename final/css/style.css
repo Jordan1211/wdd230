@@ -96,7 +96,7 @@ main ul li {
     display: block;
     margin:10px auto;
     border:1px dashed #000;
-    background-color:#8ECAE6;
+    background-color:#45611F;
   }
 
 main a {
@@ -118,7 +118,7 @@ nav button {
 
 nav button:hover{
     background-color: white;
-    color: #13C0D4;
+    color: #45611F;
   } 
 
 .activeLink {
@@ -259,7 +259,7 @@ form label.top input:required:valid {
 }
 
 .cards section {
-    background-color: #8ECAE6;
+    background-color: #F5F3F0;
     padding: 1.5rem;
     margin: 5px;
     max-height: 400px;
@@ -281,7 +281,11 @@ form label.top input:required:valid {
 }
 
 .article a {
-    color: #FFB703;
+    background-color: #597925;
+    color: #FFFFFF;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: 1rem;
 }
 
 .contactInfo {
@@ -300,11 +304,7 @@ form label.top input:required:valid {
 }
 
 .weatherSummary p {
-    font-size: -1.5rem;
-}
-
-.weatherSummary h4 {
-    font-size: -1rem;
+    font-size: -.5rem;
 }
 
 img.map {
@@ -316,21 +316,51 @@ img.map {
     max-width: 200px;
 }
 
-section.eventsection {
-    background-color: #8ECAE6;
-    color:#484a4b;
-    text-align: center;
-    padding: 2rem;
-    font-size: 1.5rem;
+.cards a {
+    color:#597925;
 }
-
 
 .action {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1rem;
     padding: 1.5rem;
-}
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #005776;
+    color: #f5f3f0;  
+ }
 
+ .action button {
+    margin-top: 30px;
+    }
  
+
   #user_gmap{ width:600px;height:400px; margin:20px20px 0px; border:solid 1px #111; }
   #user_glink {width:600px; text-align:right; font-size:10px; font-weight:normal; padding:0px; height:20px; margin:0px;}
+
+.attributions a {
+    color: #45611F;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12pt;
+}
+
+.attributions img {
+    max-width: 1000px;
+    max-height: 250px;
+}
+
+.contact {
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contactInfo {
+    background-color: #F5F3F0;
+    border: black 1pt solid;
+    padding: 1rem;
+    max-width: 500px;
+    align-self: center;
+    margin:auto;
+}

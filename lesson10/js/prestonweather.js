@@ -24,9 +24,9 @@ fetch(forecastURL)
   .then((jsObject) => {
     const sixpm = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
     let day = 1;
+console.log(jsObject);
 
     sixpm.forEach(forecast => {
-
       let thedate = new Date(forecast.dt_txt);
       const imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
       const weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
