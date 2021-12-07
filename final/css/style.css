@@ -96,7 +96,7 @@ main ul li {
     display: block;
     margin:10px auto;
     border:1px dashed #000;
-    background-color:#8ECAE6;
+    background-color:#45611F;
   }
 
 main a {
@@ -118,7 +118,7 @@ nav button {
 
 nav button:hover{
     background-color: white;
-    color: #13C0D4;
+    color: #45611F;
   } 
 
 .activeLink {
@@ -322,19 +322,20 @@ img.map {
 
 .action {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 30% 70%;
     grid-gap: 1rem;
     padding: 1.5rem;
-    margin: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: #005776;
     color: #f5f3f0;  
-}
+ }
 
-.action p {
-    font-size: 1.5rem;
-}
-
+ .action button {
+    margin-top: 30px;
+    }
  
+
   #user_gmap{ width:600px;height:400px; margin:20px20px 0px; border:solid 1px #111; }
   #user_glink {width:600px; text-align:right; font-size:10px; font-weight:normal; padding:0px; height:20px; margin:0px;}
 

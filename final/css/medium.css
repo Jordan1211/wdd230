@@ -37,10 +37,6 @@
        margin:0;
     }
 
-    .forecast, .map {
-      display: none;
-   }
-
    .gallery {
       grid-template-columns: 1fr 1fr;
    }

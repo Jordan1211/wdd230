@@ -10,7 +10,7 @@ fetch(apiURL)
  });
 
 //forecast info
-const forecastURL ='https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=9f5541804c0cbd0a629c5facccc2de31';
+const forecastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=40.3898999&lon=-111.8478224&units=imperial&appid=9f5541804c0cbd0a629c5facccc2de31";
 
 fetch(forecastURL)
  .then((response) => {
@@ -21,19 +21,21 @@ fetch(forecastURL)
    }})
 
   .then((jsObject) => {
-    const sixpm = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+    console.log(jsObject);
+
+    const sixpm = jsObject.daily.filter(x => x.dt.includes('1638856800'));
     let day = 1;
 
-    sixpm.forEach(forecast => {
+    sixpm.forEach(daily => {
 
-      let thedate = new Date(forecast.dt_txt);
-      const imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
+      let thedate = new Date(daily.dt);
+      const imagesrc = 'https://openweathermap.org/img/w/' + daily.weather[0].icon + '.png';
       const weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
       document.querySelector(`#dayofweek${day}`).innerHTML = weekdays[thedate.getDay()];
       document.querySelector(`#icon${day}`).setAttribute('src', `${imagesrc}`);
-      document.querySelector(`#icon${day}`).setAttribute('alt',`${forecast.weather[0].description}`);
-      document.querySelector(`#forecast${day}`).innerHTML = `${forecast.main.temp.toFixed(1)}&#176;F`;
+      document.querySelector(`#icon${day}`).setAttribute('alt',`${daily.weather[0].description}`);
+      document.querySelector(`#forecast${day}`).innerHTML = `${daily.temp.day.toFixed(1)}&#176;F`;
       day++;
         })
   });
