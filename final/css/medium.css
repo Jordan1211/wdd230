@@ -50,6 +50,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
   }
+  
+  .boardcards {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
 
 #Preston {
    align-content: center;

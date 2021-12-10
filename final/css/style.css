@@ -266,6 +266,14 @@ form label.top input:required:valid {
     text-align: center;
 }
 
+.boardcards section {
+    background-color: #F5F3F0;
+    padding: 1.5rem;
+    margin: 5px;
+    max-height: 400px;
+    text-align: center;
+}
+
 
 .article {
     text-align: justify;
@@ -317,6 +325,15 @@ img.map {
 }
 
 .cards a {
+    color:#597925;
+}
+
+
+.boardcards img {
+    max-width: 200px;
+}
+
+.boardcards a {
     color:#597925;
 }
 
