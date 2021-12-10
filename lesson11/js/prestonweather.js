@@ -24,7 +24,7 @@ fetch(forecastURL)
   .then((jsObject) => {
     const sixpm = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
     let day = 1;
-
+console.log(sixpm);
     sixpm.forEach(forecast => {
 
       let thedate = new Date(forecast.dt_txt);
