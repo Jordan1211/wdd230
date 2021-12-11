@@ -62,8 +62,7 @@ footer, footer a {
     color: white;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: none;
-}    
+}
 
 nav {
     background-color: #597925;
@@ -159,11 +158,12 @@ nav button:hover{
   border: 1px solid #45611F;
 }
 
-#fridayMessage {
-    background-color: #FFB703;
-    color: #023047;
+#alert {
+    background-color: #F5F3F0;
+    color: red;
     text-align: center;
-    font-size: 4rem;
+    font-size: .75rem;
+    padding: 1rem;
     font-weight: bolder;
  }
 
@@ -198,6 +198,7 @@ body .hide {
     border-radius: 10px;
     padding: .5rem 2%;
     background-color: #f5f3f0;
+    min-width: 375px;
 }
 
 form legend {
@@ -275,6 +276,27 @@ form label.top input:required:valid {
 }
 
 
+.lists section {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: .5rem;
+    width: 80%;
+    background-color: #F5F3F0;
+    text-align: center;
+}
+
+.lists img {
+    float: left; 
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.lists a {
+    color:#597925;
+    font-size: 1rem;
+}
+
 .article {
     text-align: justify;
     display: block;
@@ -346,10 +368,16 @@ img.map {
     margin-bottom: 15px;
     background-color: #005776;
     color: #f5f3f0;  
+    align-items: center;
  }
 
- .action button {
-    margin-top: 30px;
+ .action a {
+    background-color: #f5f3f0;
+    border: 1px solid #333;
+    color: black;
+    height: 25px;
+    width: 100px;
+    text-align: center;
     }
  
 
@@ -362,6 +390,11 @@ img.map {
     font-size: 12pt;
 }
 
+.zonemap a {    color: #45611F;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12pt;
+}
+
 .attributions img {
     max-width: 1000px;
     max-height: 250px;
@@ -370,7 +403,7 @@ img.map {
 .contact {
     float: left;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .contactInfo {
@@ -380,4 +413,19 @@ img.map {
     max-width: 500px;
     align-self: center;
     margin:auto;
+}
+
+.contactInfo h3 {
+    margin-top: 0pt;
+}
+
+.zonemap img {
+    display: none;
+}
+
+.cityimage img {
+    width: 49.5%;
+}
+.cityimagelarge img {
+    width: 100%;
 }
