@@ -131,4 +131,9 @@ form fieldset {
    font-size: 1.5rem;
 }
 
+.zonemap img {
+   display: block;
+   max-height: 50%;
+}
+
 }

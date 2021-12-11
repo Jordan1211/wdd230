@@ -18,8 +18,9 @@
     <link rel="shortcut icon" href="images/favicon_lccc.jpg" />
   </head>
 
-<body onload="hideMessage()">
+  <body >
     <header>
+      <div id="alert"></div>
         <a href="index.html"><img src="images/lccc.jpg" alt="Site logo" height="100px"></a> 
         <h1>Lehi City Chamber of Commerce</h1>
             <p>Come visit our pioneer spirit!</p>
@@ -37,14 +38,17 @@
     </nav>
 
     <main>
-      <h2>Lehi City</h2>      
+      <h2>City Page</h2>      
       
-      <section>
-        
+      <section class="zonemap">
+        <h3>Lehi City Zone Map</h3>
+        <img src="images/lehimap.jpg" alt="lehi city zone map">
+        <p>To access the interactive map go here: <a href="https://lehi.maps.arcgis.com/apps/webappviewer/index.html?id=4c6a85c200fc46099009c812914a9e0d">
+          https://lehi.maps.arcgis.com/apps/webappviewer/index.html?id=4c6a85c200fc46099009c812914a9e0d</a></p>
       </section>
 
       <section class="article">
-          <h3>Article About Lehi on City Site</h3>
+        <h3>All About Lehi City</h3>
           <img src="images/lehicity.jpg" alt="Lehi City Page">
           <p>
             As Utah’s sixth oldest city, Lehi is rich in pioneer and old west history. Originally settled by Mormon pioneers, the
@@ -57,9 +61,29 @@
             than doubled in size since 2000, with population estimates approaching 60,000 residents. Lehi is quickly becoming a
             premier technology and commercial center along the Wasatch Front. Several landmark companies call Lehi home. Lehi is
             also home to a wide variety of retail stores and restaurants. Thanksgiving Point, a unique destination offering museums,
-            botanical gardens, shopping, restaurants, and other entertainment options highlights all that Lehi has to offer.
-          <a href="https://www.lehi-ut.gov/community/about-lehi/">Read Full Article on Lehi City Site...</a>
+            botanical gardens, shopping, restaurants, and other entertainment options highlights all that Lehi has to offer.<br>
+          <a href="https://www.lehi-ut.gov/community/about-lehi/">Read Full Article on Lehi City Site</a>
         </p>
+      </section>
+
+      <section class="cityimage">
+        <img src="images/cityimage2.jpg" alt="">
+        <img src="images/cityimage3.jpg" alt="">
+
+      </section>
+
+      <section class="cityimagelarge">
+        <img src="images/cityimage1.jpg" alt="">
+      </section>
+
+      <section class="demographics">
+        <h2>Demographics</h2>
+        <h3>Population: 54,382</h3>
+        <h3>Median Age: 23.9</h3>
+        <h3>Median Household Income: $72,894</h3>
+        <h3>Average Family Size: 3.91</h3>
+        <h3>Total Housing Units: 13,064</h3>
+        <h3>Home Ownership Rate: 80.9%</h3>
       </section>
 
     </main>
@@ -70,9 +94,8 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/togglemenu.js"></script>
-    <script src="js/hidemessage.js"></script>
-    <script src="js/windchill.js"></script>
-    <script src="js/prestonweather.js"></script>
+    <script src="js/alert.js"></script>
+
 </body>
 
 </html>

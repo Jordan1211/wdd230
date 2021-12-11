@@ -18,8 +18,9 @@
     <link rel="shortcut icon" href="images/favicon_lccc.jpg" />
   </head>
 
-<body>
+  <body >
     <header>
+      <div id="alert"></div>
         <a href="index.html"><img src="images/lccc.jpg" alt="Site logo" height="100px"></a> 
         <h1>Lehi City Chamber of Commerce</h1>
             <p>Come visit our pioneer spirit!</p>
@@ -39,7 +40,10 @@
     <main class="clearfix">
         
         <h1>Business Directory</h1>
-        <div class="cards"></div>
+        <button onclick="toggleList()">Change View &#9776; / &#9638;</button>
+
+        <div id="directorycards" class="cards"></div>
+        <div id="directorylist" class="lists hide"></div>
 
     </main>
 
@@ -50,9 +54,9 @@
     <script src="js/currentdate.js"></script>
     <script src="js/directory.js"></script>
     <script src="js/togglemenu.js"></script>
-    <!-- <script src="js/hidemessage.js"></script> -->
-    <!-- <script src="js/lazyload.js"></script> -->
-    <!-- <script src="js/lastvisit.js"></script> -->
+    <script src="js/togglelist.js"></script>
+    <script src="js/alert.js"></script>
+
 </body>
 
 </html>
